@@ -376,6 +376,39 @@ button:hover{
   .pill{display:inline-block;margin-top:11px}
   .results{max-height:430px}
 }
+
+/* More transparent search area so animated background is visible */
+.panel{
+  background:
+    linear-gradient(180deg,rgba(15,23,42,.38),rgba(7,13,25,.26)),
+    radial-gradient(circle at 10% 0%,rgba(59,130,246,.12),transparent 42%) !important;
+  border-color:rgba(148,163,184,.14) !important;
+  box-shadow:0 28px 90px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.045) !important;
+  backdrop-filter:blur(9px) !important;
+}
+input{
+  background:rgba(2,6,23,.48) !important;
+  border-color:rgba(148,163,184,.17) !important;
+}
+.quick span{
+  background:rgba(15,23,42,.30) !important;
+}
+.result{
+  background:linear-gradient(180deg,rgba(15,23,42,.30),rgba(15,23,42,.20)) !important;
+  border-color:rgba(148,163,184,.13) !important;
+}
+.result:hover{
+  background:linear-gradient(180deg,rgba(30,41,59,.46),rgba(15,23,42,.30)) !important;
+}
+.shade{
+  background:
+    radial-gradient(circle at center,rgba(2,6,23,.00),rgba(2,6,23,.25) 84%),
+    linear-gradient(180deg,rgba(2,6,23,.02),rgba(2,6,23,.14)) !important;
+}
+.results::-webkit-scrollbar-track{
+  background:rgba(15,23,42,.18) !important;
+}
+
 </style>
 </head>
 <body>
